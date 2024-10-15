@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folder (exclude from version control)
+venv/
+
+# Python environment files (store secrets, exclude from version control)
+.env
+.env.*
+
+# Terraform cached providers (exclude from version control)
+.terraform/           # Cached providers and modules
+
+# Ignore Terraform state files (contain sensitive data)
+terraform.tfstate
+terraform.tfstate.backup
+
+# Lock file for Terraform to ensure version consistency
+terraform.lock.hcl
+
+# Ignore all Terraform provider binaries
+terraform/.terraform/providers/**/*
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db

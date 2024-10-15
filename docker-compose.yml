@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    build: .
+    container_name: aws-serverless-iac-db
+    env_file:
+      - .env # Uses .env for environment variables
+    volumes:
+      - .:/app # Mounts your project directory
+    command: python app.py # Runs your app when the container starts
